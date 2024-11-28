@@ -1,0 +1,32 @@
+/**
+ * This is the documentation comment for the .ant-drawer class.
+ * It is located in the file /c:/Project/WBS/IHP_WBS_FE/src/components/drawer/index.less.
+ */
+.ant-drawer {
+  .ant-drawer-header,
+  .ant-drawer-footer {
+    @apply border-base-200;
+  }
+  .ant-drawer-content {
+    @apply bg-base-100;
+  }
+  .ant-drawer-title {
+    @apply text-base-content;
+  }
+  .ant-drawer-body {
+    @apply overflow-auto;
+
+    &::-webkit-scrollbar {
+      @apply ~'size-3';
+    }
+    &::-webkit-scrollbar-track {
+      @apply rounded-lg bg-base-200;
+    }
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-lg border-2 border-solid border-base-200 bg-base-300;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      @apply bg-base-content/20;
+    }
+  }
+}
